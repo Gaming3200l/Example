@@ -110,4 +110,80 @@
     }
   </script>
 </body>
+</html>      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Website Info Lengkap</h1>
+    <p>Menampilkan informasi dengan tampilan rapi dan modern</p>
+  </header>
+
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <section id="profil" class="card">
+      <h2>Profil</h2>
+      <p>Website ini dibuat untuk memberikan informasi secara lengkap. Anda bisa menampilkan data sekolah, perusahaan, organisasi, atau pribadi.</p>
+    </section>
+
+    <section id="layanan" class="card">
+      <h2>Layanan</h2>
+      <ul>
+        <li>Memberikan informasi terbaru</li>
+        <li>Tampilan web modern</li>
+        <li>Desain responsif untuk semua perangkat</li>
+      </ul>
+    </section>
+
+    <section id="kontak" class="card">
+      <h2>Kontak</h2>
+      <p>Email: dedesatrio3200l@gmail.com</p>
+      <p>Telepon: +62 822 5967 7206</p>
+      <button onclick="tampilkanAlert()">Klik untuk Info Tambahan</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Website Info Lengkap. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function tampilkanAlert() {
+      alert("Terima kasih sudah mengunjungi website ini");
+    }
+  </script>
+</body>
 </html>
