@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Info Lengkap</title>
+  <title>Website OSIS</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -35,6 +35,135 @@
     .container {
       padding: 20px;
       max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background: #0077cc;
+      color: white;
+    }
+    img {
+      max-width: 120px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Website OSIS</h1>
+    <p>Informasi, Layanan, dan Jadwal Kegiatan OSIS</p>
+  </header>
+
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#jadwal">Jadwal Kegiatan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <section id="profil" class="card">
+      <h2>Profil</h2>
+      <p>OSIS adalah organisasi siswa yang berfungsi sebagai wadah pengembangan diri, kreativitas, dan tanggung jawab seluruh siswa di sekolah.</p>
+    </section>
+
+    <section id="layanan" class="card">
+      <h2>Layanan</h2>
+      <ul>
+        <li>Informasi kegiatan sekolah</li>
+        <li>Publikasi acara resmi</li>
+        <li>Wadah aspirasi siswa</li>
+      </ul>
+    </section>
+
+    <section id="jadwal" class="card">
+      <h2>Jadwal Kegiatan OSIS</h2>
+      <p>Berikut adalah daftar kegiatan OSIS yang akan datang:</p>
+      <table>
+        <tr>
+          <th>Tanggal</th>
+          <th>Tempat</th>
+          <th>Kegiatan</th>
+          <th>Dokumentasi</th>
+        </tr>
+        <tr>
+          <td>01 Oktober 2025</td>
+          <td>Aula Sekolah</td>
+          <td>Rapat Koordinasi OSIS</td>
+          <td><img src="https://via.placeholder.com/120x80?text=Rapat" alt="Rapat OSIS"></td>
+        </tr>
+        <tr>
+          <td>15 Oktober 2025</td>
+          <td>Lapangan</td>
+          <td>Latihan Upacara</td>
+          <td><img src="https://via.placeholder.com/120x80?text=Upacara" alt="Latihan Upacara"></td>
+        </tr>
+        <tr>
+          <td>20 Oktober 2025</td>
+          <td>Ruang Multimedia</td>
+          <td>Workshop Literasi Digital</td>
+          <td><img src="https://via.placeholder.com/120x80?text=Workshop" alt="Workshop Literasi"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="kontak" class="card">
+      <h2>Kontak</h2>
+      <p>Email: osis.sekolah@gmail.com</p>
+      <p>Telepon: +62 812 3456 7890</p>
+      <button onclick="tampilkanAlert()">Klik untuk Info Tambahan</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Website OSIS. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function tampilkanAlert() {
+      alert("Terima kasih sudah mendukung kegiatan OSIS!");
+    }
+  </script>
+</body>
+</html>      max-width: 1000px;
       margin: auto;
     }
     .card {
